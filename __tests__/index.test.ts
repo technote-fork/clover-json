@@ -9,6 +9,9 @@ describe('Check if it can parse a clover file', () => {
 		const result = await parseFile(getFilePath('clover1.xml'));
 
 		expect(result.length).toBe(3);
+		expect(result[0].file).toBe('coveralls/lib/client.js');
+		expect(result[1].file).toBe('coveralls/lib/configuration.js');
+		expect(result[2].file).toBe('coveralls/lib/git_commit.js');
 		expect(result[0].functions.found).toBe(1);
 		expect(result[0].functions.hit).toBe(1);
 		expect(result[0].lines.found).toBe(4);
@@ -17,7 +20,6 @@ describe('Check if it can parse a clover file', () => {
 		expect(result[0].functions.details[0].hit).toBe(2);
 		expect(result[0].lines.details[0].line).toBe(6);
 		expect(result[0].lines.details[0].hit).toBe(2);
-
 	});
 
 	it('should parse a second file', async() => {
