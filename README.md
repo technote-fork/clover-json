@@ -7,6 +7,9 @@
 
 Parse [clover](https://www.atlassian.com/software/clover) report files, and return a JSON representation in a [lcov-parse](https://github.com/davglass/lcov-parse) compatible manner.
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 ## Usage
 
 ```typescript
