@@ -49,6 +49,16 @@ describe('Check if it can parse a clover file', () => {
 		expect(result[0].lines.hit).toBe(1);
 	});
 
+	it('should parse a file without a class property', async() => {
+		const result = await parseFile(getFilePath('clover-without-class.xml'));
+		expect(result.length).toBe(1);
+		expect(result[0].file).toBe('index.ts');
+		expect(result[0].functions.found).toBe(0);
+		expect(result[0].functions.hit).toBe(0);
+		expect(result[0].lines.found).toBe(10);
+		expect(result[0].lines.hit).toBe(10);
+	});
+
 	it('should throw error if file not exists', async() => {
 		await expect(parseFile(getFilePath('test'))).rejects.toThrow('no such file or directory');
 	});
