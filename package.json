@@ -1,5 +1,5 @@
 {
-  "name": "@cvrg-report/clover-json",
+  "name": "@technote-space/clover-json",
   "version": "0.3.0",
   "description": "Parse clover XML coverage reports to JSON, using the same format as lcov-parse",
   "keywords": [
@@ -14,29 +14,39 @@
     "parser",
     "converter"
   ],
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "mocha",
-    "test-coverage": "nyc mocha",
-    "publish-please": "publish-please",
-    "prepublishOnly": "publish-please guard"
+    "build": "tsc",
+    "test": "yarn lint && yarn cover",
+    "lint": "eslint src/**/**/*.ts && eslint __tests__/**/**/*.ts",
+    "cover": "jest --coverage",
+    "update": "ncu -u && yarn install && yarn upgrade && yarn audit"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coverage-report/clover-json.git"
+    "url": "https://github.com/technote-fork/clover-json.git"
   },
   "author": "TobiLG",
+  "contributors": [
+    "Technote <technote.space@gmail.com> (https://technote.space)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/coverage-report/clover-json/issues"
+    "url": "https://github.com/technote-fork/clover-json/issues"
   },
-  "homepage": "https://github.com/coverage-report/clover-json",
+  "homepage": "https://github.com/technote-fork/clover-json",
   "devDependencies": {
-    "mocha": "^5.2.0",
-    "nyc": "^13.3.0",
-    "publish-please": "^5.4.3"
+    "@types/node": "^12.7.8",
+    "@typescript-eslint/eslint-plugin": "^2.3.1",
+    "@typescript-eslint/parser": "^2.3.1",
+    "eslint": "^6.4.0",
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "jest-circus": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
   },
   "dependencies": {
-    "xml2js": "^0.4.19"
+    "xml2js": "^0.4.22"
   }
 }
