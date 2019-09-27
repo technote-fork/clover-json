@@ -3,6 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40technote-space%2Fclover-json.svg)](https://badge.fury.io/js/%40technote-space%2Fclover-json)
 [![Build Status](https://github.com/technote-space/clover-json/workflows/Build/badge.svg)](https://github.com/technote-space/clover-json/actions)
 [![Coverage Status](https://coveralls.io/repos/github/technote-space/clover-json/badge.svg?branch=master)](https://coveralls.io/github/technote-space/clover-json?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/technote-space/clover-json/badge)](https://www.codefactor.io/repository/github/technote-space/clover-json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/technote-space/clover-json/blob/master/LICENSE)
 
 Parse [clover](https://www.atlassian.com/software/clover) report files, and return a JSON representation in a [lcov-parse](https://github.com/davglass/lcov-parse) compatible manner.
@@ -17,7 +18,9 @@ Parse [clover](https://www.atlassian.com/software/clover) report files, and retu
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Usage
-
+1. Install  
+`npm i @technote-space/clover-json`
+1. 
 ```typescript
 import { parseFile, parseContent } from "@technote-space/clover-json";
 
