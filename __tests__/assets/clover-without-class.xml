@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1569520458999" clover="3.2.0">
+	<project timestamp="1569520458999" name="All files">
+		<metrics statements="10" coveredstatements="10" conditionals="11" coveredconditionals="11" methods="5" coveredmethods="5" elements="26" coveredelements="26" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+		<file name="index.ts" path="/var/www/html/index.ts">
+			<metrics statements="10" coveredstatements="10" conditionals="11" coveredconditionals="11" methods="5" coveredmethods="5"/>
+			<line num="3" count="11" type="stmt"/>
+			<line num="6" count="1" type="cond" truecount="1" falsecount="0"/>
+			<line num="7" count="28" type="cond" truecount="2" falsecount="0"/>
+			<line num="8" count="12" type="cond" truecount="2" falsecount="0"/>
+			<line num="9" count="13" type="stmt"/>
+			<line num="11" count="5" type="stmt"/>
+			<line num="13" count="16" type="cond" truecount="2" falsecount="0"/>
+			<line num="14" count="6" type="stmt"/>
+			<line num="16" count="10" type="cond" truecount="2" falsecount="0"/>
+			<line num="24" count="11" type="cond" truecount="2" falsecount="0"/>
+		</file>
+	</project>
+</coverage>

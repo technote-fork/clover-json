@@ -2,7 +2,7 @@
 <coverage generated="1320170507">
     <project timestamp="1320170507">
         <package name="hello.world">
-            <file name="/app/Models/Scenario.php">
+            <file name="app/Models/Scenario.php">
             <class name="App\Models\Scenario" namespace="App\Models">
                 <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
             </class>

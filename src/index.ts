@@ -3,7 +3,7 @@ import { promisify } from 'util';
 import { parseString } from 'xml2js';
 
 type coverageData = { file: { $; line }[] }
-const getCoverageData = (projectObj): coverageData[] => Object.prototype.hasOwnProperty.call(projectObj, 'package') ? projectObj.package : [Object.assign({}, projectObj, {name: undefined})];
+const getCoverageData = (projectObj): coverageData[] => Object.prototype.hasOwnProperty.call(projectObj, 'package') ? projectObj.package : [Object.assign({}, projectObj, {$: Object.assign({}, projectObj.$, {name: undefined})})];
 const getPackageName = (data): string => Object.prototype.hasOwnProperty.call(data, '$') && Object.prototype.hasOwnProperty.call(data.$, 'name') && data.$.name ? data.$.name + '/' : '';
 
 type classDetail = { name?: string; fileName: string; lines?: { $: { type; name; num; count } }[] }
