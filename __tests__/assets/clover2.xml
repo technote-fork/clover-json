@@ -2,7 +2,7 @@
 <coverage generated="1320170507">
     <project timestamp="1320170507">
         <package name="hello.world">
-            <file name="/src/HelloWorld.php">
+            <file name="src/HelloWorld.php">
                 <class name="HelloWorld" namespace="global">
                     <metrics methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="1" elements="6" coveredelements="2"/>
                 </class>
