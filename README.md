@@ -19,8 +19,11 @@ Parse [clover](https://www.atlassian.com/software/clover) report files, and retu
 
 ## Usage
 1. Install  
-`npm i @technote-space/clover-json`
-1. 
+   * npm  
+   `npm i @technote-space/clover-json`  
+   * yarn  
+   `yarn add @technote-space/clover-json`
+1. Use
 ```typescript
 import { parseFile, parseContent } from "@technote-space/clover-json";
 
