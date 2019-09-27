@@ -33,7 +33,7 @@ run();
 ```
 
 ## Sample Data
-[`__tests__/assets/cover1.xml`](__tests__/assets/cover1.xml)
+[`__tests__/assets/clover1.xml`](__tests__/assets/clover1.xml)
 ```json
 [
   {
