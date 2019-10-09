@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40technote-space%2Fclover-json.svg)](https://badge.fury.io/js/%40technote-space%2Fclover-json)
 [![Build Status](https://github.com/technote-space/clover-json/workflows/Build/badge.svg)](https://github.com/technote-space/clover-json/actions)
-[![Coverage Status](https://coveralls.io/repos/github/technote-space/clover-json/badge.svg?branch=master)](https://coveralls.io/github/technote-space/clover-json?branch=master)
+[![codecov](https://codecov.io/gh/technote-space/clover-json/branch/master/graph/badge.svg)](https://codecov.io/gh/technote-space/clover-json)
 [![CodeFactor](https://www.codefactor.io/repository/github/technote-space/clover-json/badge)](https://www.codefactor.io/repository/github/technote-space/clover-json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/technote-space/clover-json/blob/master/LICENSE)
 
