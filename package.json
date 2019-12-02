@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/clover-json",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "description": "Parse clover XML coverage reports to JSON, using the same format as lcov-parse",
   "author": "TobiLG",
   "contributors": [
@@ -19,13 +19,13 @@
     "parser",
     "converter"
   ],
-  "homepage": "https://github.com/technote-fork/clover-json",
+  "homepage": "https://github.com/technote-space/clover-json",
   "repository": {
     "type": "git",
-    "url": "https://github.com/technote-fork/clover-json.git"
+    "url": "https://github.com/technote-space/clover-json.git"
   },
   "bugs": {
-    "url": "https://github.com/technote-fork/clover-json/issues"
+    "url": "https://github.com/technote-space/clover-json/issues"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
