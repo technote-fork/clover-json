@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/clover-json",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "description": "Parse clover XML coverage reports to JSON, using the same format as lcov-parse",
   "author": "TobiLG",
   "contributors": [
@@ -33,18 +33,18 @@
     "dist"
   ],
   "dependencies": {
-    "xml2js": "^0.4.22"
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "@types/node": "^12.12.19",
-    "@typescript-eslint/eslint-plugin": "^2.12.0",
-    "@typescript-eslint/parser": "^2.12.0",
-    "eslint": "^6.7.2",
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "eslint": "^6.8.0",
     "jest": "^24.9.0",
     "jest-circus": "^24.9.0",
-    "ts-jest": "^24.2.0",
-    "typescript": "^3.7.3"
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.5"
   },
   "publishConfig": {
     "access": "public"
@@ -52,8 +52,8 @@
   "scripts": {
     "build": "tsc",
     "test": "yarn lint && yarn cover",
-    "lint": "eslint src/**/**/*.ts __tests__/**/**/*.ts",
-    "lint:fix": "eslint --fix src/**/**/*.ts __tests__/**/**/*.ts",
+    "lint": "eslint 'src/**/*.ts' '__tests__/**/*.ts'",
+    "lint:fix": "eslint --fix 'src/**/*.ts' '__tests__/**/*.ts'",
     "cover": "jest --coverage",
     "update": "ncu -u && yarn install && yarn upgrade && yarn audit"
   }
