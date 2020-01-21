@@ -17,7 +17,6 @@ jobs:
         with:
           fetch-depth: 3
       - uses: technote-space/get-diff-action@v1
-        id: git-diff
         with:
           PREFIX_FILTER: |
             src/
@@ -62,14 +61,11 @@ jobs:
         with:
           fetch-depth: 3
       - uses: technote-space/get-diff-action@v1
-        id: git-diff
         with:
           PREFIX_FILTER: |
             src/
             __tests__/
-          SUFFIX_FILTER: |
-            .ts
-            .snap
+          SUFFIX_FILTER: .ts
           FILES: |
             yarn.lock
             jest.config.js
