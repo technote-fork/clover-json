@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/clover-json",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "description": "Parse clover XML coverage reports to JSON, using the same format as lcov-parse",
   "author": "TobiLG",
   "contributors": [
@@ -41,8 +41,8 @@
     "@typescript-eslint/eslint-plugin": "^2.17.0",
     "@typescript-eslint/parser": "^2.17.0",
     "eslint": "^6.8.0",
-    "jest": "^24.9.0",
-    "jest-circus": "^24.9.0",
+    "jest": "^25.1.0",
+    "jest-circus": "^25.1.0",
     "ts-jest": "^24.3.0",
     "typescript": "^3.7.5"
   },
