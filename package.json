@@ -1,12 +1,7 @@
 {
   "name": "@technote-space/clover-json",
-  "version": "0.4.32",
+  "version": "0.4.33",
   "description": "Parse clover XML coverage reports to JSON, using the same format as lcov-parse",
-  "author": "TobiLG",
-  "contributors": [
-    "Technote <technote.space@gmail.com> (https://technote.space)"
-  ],
-  "license": "MIT",
   "keywords": [
     "coverage",
     "report",
@@ -20,18 +15,31 @@
     "converter"
   ],
   "homepage": "https://github.com/technote-space/clover-json",
+  "bugs": {
+    "url": "https://github.com/technote-space/clover-json/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/technote-space/clover-json.git"
   },
-  "bugs": {
-    "url": "https://github.com/technote-space/clover-json/issues"
-  },
+  "license": "MIT",
+  "author": "TobiLG",
+  "contributors": [
+    "Technote <technote.space@gmail.com> (https://technote.space)"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsc",
+    "cover": "jest --coverage",
+    "lint": "eslint 'src/**/*.ts' '__tests__/**/*.ts' --cache",
+    "lint:fix": "eslint --fix 'src/**/*.ts' '__tests__/**/*.ts'",
+    "test": "yarn lint && yarn cover",
+    "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit"
+  },
   "dependencies": {
     "xml2js": "^0.4.23"
   },
@@ -48,13 +56,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "build": "tsc",
-    "test": "yarn lint && yarn cover",
-    "lint": "eslint 'src/**/*.ts' '__tests__/**/*.ts' --cache",
-    "lint:fix": "eslint --fix 'src/**/*.ts' '__tests__/**/*.ts'",
-    "cover": "jest --coverage",
-    "update": "npx npm-check-updates -u && yarn install && yarn upgrade && yarn audit"
   }
 }
