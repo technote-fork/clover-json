@@ -1,6 +1,6 @@
 {
   "name": "@technote-space/clover-json",
-  "version": "0.4.36",
+  "version": "0.4.37",
   "description": "Parse clover XML coverage reports to JSON, using the same format as lcov-parse",
   "keywords": [
     "coverage",
